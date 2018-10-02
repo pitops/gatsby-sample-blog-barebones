@@ -8,5 +8,3 @@ excerpt: "Great Pumpkin, or Greatest Pumpkin?"
 
 # YOOOOOOOO
 It was a clear black night, the stars were brimming with light like a christmas tree.
-
-[test](/test)
