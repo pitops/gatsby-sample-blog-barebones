@@ -11,7 +11,7 @@ const IndexPage = ({data}) => {
         const { frontmatter } = post
 
         return (
-          <div>
+          <div key={frontmatter.date}>
             <h2>
               <Link to={frontmatter.path}>
                 {frontmatter.title}
@@ -23,8 +23,9 @@ const IndexPage = ({data}) => {
             <ul>
               {post.frontmatter.tags.map(tag => {
                 return (
-                  <li>
-                    <Link to={`/tags/${tag}`}>
+                  <li key={tag}>
+                    <Link
+                      to={`/tags/${tag}`}>
                       {tag}
                     </Link>
                   </li>
