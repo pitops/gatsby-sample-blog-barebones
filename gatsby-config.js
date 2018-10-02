@@ -4,10 +4,11 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-transformer-remark',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
