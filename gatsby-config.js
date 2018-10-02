@@ -1,9 +1,13 @@
 module.exports = {
+  pathPrefix: 'gatsby-sample-blog-barebones',
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-catch-links',
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,8 +20,6 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
-    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
